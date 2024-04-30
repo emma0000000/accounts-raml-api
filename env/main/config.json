@@ -1,0 +1,7 @@
+{
+    "envConfig":{
+        "envName" : "Sandbox",
+        "muleVersion" : "4.6.1",
+        "cloudhubAppName" : "accounts-raml-api"
+    }
+}
