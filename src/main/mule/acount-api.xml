@@ -141,5 +141,6 @@ output application/json
 ] as Array {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
             </ee:message>
         </ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="ba2983b8-b40f-470c-9ac4-aa1f507807a1" />
     </flow>
 </mule>
