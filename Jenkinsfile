@@ -25,7 +25,7 @@ stage('Build Application') {
         ANYPOINT_CREDENTIALS = credentials('1f1a2545-1ea7-4fb0-a65b-19ea1d9a3f88')
       }
       steps {
-        sh "mvn deploy -DmuleDeploy -Dcloud.env=${env.envName} -DcloudhubAppName=${env.cloudhubAppName} -Dmule.version=${env.muleVersion} -Dcloud.user=${ANYPOINT_CREDENTIALS_USR} -Dcloud.password=${ANYPOINT_CREDENTIALS_PSW}"
+        sh "mvn deploy -DmuleDeploy -Dcloud.env=${env.envName} -DcloudhubAppName=${env.cloudhubAppName} -Dmule.version=${env.muleVersion} -Dcloud.user=${ANYPOINT_CREDENTIALS_USR} -Dcloud.password=${ANYPOINT_CREDENTIALS_PSW} -DworkerType=Micro -Dworkers=1"
       }
     }
   }
